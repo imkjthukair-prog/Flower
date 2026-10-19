@@ -1,0 +1,7 @@
+Help me install Flower 0.2.4 on my Mac. Check that this is an Apple Silicon Mac first; stop on Intel. The declared minimum is macOS 13, but this pre-release was tested only on macOS 27.
+
+Download https://github.com/imkjthukair-prog/Flower/releases/download/v0.2.4/Flower-Friends.zip and verify SHA-256 equals 840887adb7f0f1aab2727f1a180a2c2776d07bec846bdc407d3eb2a17042f6fd. Stop if it differs. Unzip it and install Flower.app in /Applications, or ~/Applications if administrator access is unavailable. Ask before replacing any existing installation.
+
+This build is ad-hoc signed, not Developer ID signed or notarized. Review its release notes and resource provenance with me. If macOS blocks it, pause for my explicit approval to trust this unrecognized app and guide me through System Settings → Privacy & Security → Open Anyway. I must approve the system prompt myself. Do not remove quarantine attributes, disable Gatekeeper, or bypass security checks.
+
+Launch Flower and explain that it runs in the menu bar. Ask me to physically drag a disposable image in Finder, hold Shift, and drop onto JPEG or PDF; then try Command → Compress. AirDrop is under Command and opens a recipient picker; do not send anything. Check the generated files and preserve the originals. Report what was verified and anything still blocked.

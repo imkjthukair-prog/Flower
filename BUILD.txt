@@ -1,0 +1,17 @@
+FLOWER 0.2.4 — AUTHOR-WRITTEN SOURCE PACKAGE
+
+Requirements: Apple Silicon Mac, macOS, and Xcode Command Line Tools providing xcrun/swiftc. The build declares macOS 13 as its deployment target; older versions were not verified. The tested compiler was Swift 6.3.3.
+
+This archive intentionally contains source and documentation only. It does not contain the app's copied binary resources, original-specific templates/helpers, or bundled third-party runtimes. It therefore cannot build by itself.
+
+Obtain the matching Flower 0.2.4 app release and verify its download hash. From this source folder, run:
+
+  ./build.sh "$PWD/outputs/Flower.app" "/Applications/Flower.app/Contents/Resources"
+
+If installed in your user Applications folder instead:
+
+  ./build.sh "$PWD/outputs/Flower.app" "$HOME/Applications/Flower.app/Contents/Resources"
+
+The build copies the supplied Resources directory, compiles Sources/*.swift, and applies local ad-hoc signing. It does not add Apple Developer ID signing or notarization. The script refuses to replace a destination with an unrelated bundle identifier. Choose a separate output path to avoid replacing your installed app.
+
+The app bundle retains original-specific assets and helpers plus third-party code. Read RESOURCE-PROVENANCE.txt and the notices in that Resources directory. Availability of this source package does not grant a blanket license for those resources or for the complete package.

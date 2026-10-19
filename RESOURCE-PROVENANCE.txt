@@ -1,0 +1,26 @@
+FLOWER 0.2.4 — RESOURCE PROVENANCE
+
+THIS SOURCE ARCHIVE
+
+Sources/*.swift and build.sh were authored for this local reconstruction. RecoveredPetalShape.swift is locally transcribed geometry guided by selected native-instruction analysis, not the original Swift source. The original application was not fully recovered into source. No blanket open-source license is granted for this archive or the complete app.
+
+RESOURCES IN THE MATCHING APP BUNDLE, NOT IN THIS SOURCE ARCHIVE
+
+The build reuses the matching app's Contents/Resources directory. That directory includes resources copied from the installed Tangerine 2.0.2 application:
+
+- HighlightSound.wav: original-specific feedback audio. No independent permission for public redistribution is asserted.
+- PagesWriter.js and PagesTemplate.pages: original-specific glue/template surrounding the MIT cupertino-files dependency. The dependency's license is retained in CupertinoFiles-Licenses.txt; it is not asserted to license the original-specific surrounding material.
+- OfficePreview.js: includes docx-preview, JSZip and related components with OfficePreview-Licenses.txt. Original-specific glue retains its original rights.
+- PowerPoint/lib/tangerine-powerpoint.jar: original compiled conversion helper containing TangerinePowerPoint and TangerineSpreadsheet entry points. This is not newly authored Java source. No independent permission for public redistribution is asserted.
+- Other PowerPoint/lib/*.jar dependencies: Apache POI, PDFBox and related third-party libraries, retaining internal META-INF notices and PowerPoint/THIRD-PARTY-NOTICES.txt.
+- PowerPoint/arm64: copied Java runtime, retaining release/config files and its legal/ tree, including LICENSE, ADDITIONAL_LICENSE_INFO, ASSEMBLY_EXCEPTION and module notices. Executable signatures were changed to local ad-hoc signatures; runtime program code was not patched.
+- Tools/ffmpeg and Tools/cwebp: copied FFmpeg 8.0.3 and cwebp 1.6.0 binaries, locally ad-hoc signed. Retained license texts include Tools/licenses/ffmpeg/COPYING.LGPLv2.1 and COPYING.LGPLv3, Tools/licenses/libwebp/COPYING, and Tools/licenses/lame/COPYING. Retaining notices alone does not establish completion of every applicable source or distribution obligation.
+- ExifTool: copied source and original metadata bridge, retaining the original README and Perl Artistic/GPL terms. Current native image metadata handling does not require this bridge, but it remains in the matching app resource set.
+
+SYSTEM COMPONENTS
+
+AppKit, SwiftUI, CoreGraphics, ImageIO, AVFoundation, PDFKit, Vision, JavaScriptCore, WebKit, Security and the Swift runtime are provided by macOS. Archive operations also use system command-line tools. These system components are not bundled in this archive.
+
+RIGHTS AND RELATIONSHIP
+
+Flower is not an official Tangerine release and is not represented as the original source or an established exact replica. Original-specific resources and third-party components retain their original rights and licenses. Publishing authored source does not supply a blanket license for those components or independently establish permission to redistribute original-specific resources.
